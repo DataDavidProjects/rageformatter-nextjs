@@ -14,7 +14,7 @@ Have you ever wanted to vent out your rage in a message but feared the repercuss
 
 ## 🎉 Features
 
-1. **Type**: Vent out your work frustrations while writing your working e-mail
+1. **Type**: Vent out your work frustrations while writing your working e-mails
 2. **Click**: Let us work our magic!
 3. **Copy**: Receive a polite, respectful, and well-mannered version to send.
 4. **Send**: Share your refined feelings without burning any bridges.
@@ -28,18 +28,18 @@ Have you ever wanted to vent out your rage in a message but feared the repercuss
 
 ## 🇮🇹 Made for Italians
 
-Because we know how passionate we can get! This app understands and respects the Italian flair, turning even the most heated rants into polite prose.
+Because we know how passionate we can get! This app understands and respects the Italian flair, turning even the most heated rants into polite office prose.
 
 ## 🍝 Usage
 
 1. Visit the webapp.
-2. Type in your spicy message.
+2. Type in your working message.
 3. Click on **"Format!"**.
-4. Enjoy a plate of well-cooked, courteous words ready for serving!
+4. Enjoy a plate of well-cooked, lame corporate words ready for serving!
 
 ## 📌 Notes
 
-While the app is a fun tool, always make sure to double-check your messages before sending. We aim for accuracy, but it's always good to ensure your message is conveyed correctly.
+While the app is a fun tool, always make sure to double-check your messages before sending them. It's always good to ensure your message is conveyed correctly.
 
 ## 🤝 Contribute
 
@@ -48,8 +48,8 @@ Fancy a tweak? Found a way to make it even cooler? Contributions are welcome! Fo
 
 ## 💌 Feedback
 
-Loved it? Hated it? Found a bug while turning your fireball into a snowflake? Let us know!
+Loved it? Hated it? Found a bug? Let me know!
 
 ---
 
-**RageFormatter - Turning Fiery Words to Frosty Prose since 2023.**
+**RageFormatter - Because they do not pay you enough to be polite.**
