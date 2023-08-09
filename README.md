@@ -44,6 +44,7 @@ While the app is a fun tool, always make sure to double-check your messages befo
 ## 🤝 Contribute
 
 Fancy a tweak? Found a way to make it even cooler? Contributions are welcome! Fork and submit a pull request.
+"Senza stare addosso pero.."
 
 ## 💌 Feedback
 
