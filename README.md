@@ -8,7 +8,7 @@
 
 ---
 
-**"Dal furioso all'affettuoso in un click!"** _(From furious to courteous in one click!)_
+**"Perche non ti pagano abbastanza da essere pure educato!"**
 
 Have you ever wanted to vent out your rage in a message but feared the repercussions? Well, say "Ciao!" to your problems, because **RageFormatter** is here!
 
