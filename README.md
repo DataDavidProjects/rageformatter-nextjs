@@ -8,7 +8,7 @@
 
 ---
 
-**"Perche non ti pagano abbastanza da essere pure educato!"**
+**"Perche non ti pagano abbastanza per essere educato!"**
 
 Have you ever wanted to vent out your rage in a message but feared the repercussions at work? Well, say "Ciao Ciao!" to your problems, because **RageFormatter** is here!
 
