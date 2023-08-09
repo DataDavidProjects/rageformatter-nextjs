@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Script from "next/script";
 
 const MessageForm: React.FC = () => {
   const [message, setMessage] = useState("");
@@ -33,6 +34,17 @@ const MessageForm: React.FC = () => {
 
   return (
     <div className="py-2 grid col-auto justify-center mt-12">
+      <Script
+        id="Adsense-id"
+        data-ad-client="ca-pub-6061434464691027"
+        async
+        strategy="afterInteractive"
+        onError={(e) => {
+          console.error("Script failed to load", e);
+        }}
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        crossOrigin="anonymous"
+      />
       <form
         onSubmit={handleSubmit}
         className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col  space-y-4"

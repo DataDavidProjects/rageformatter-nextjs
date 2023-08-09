@@ -14,9 +14,9 @@ Have you ever wanted to vent out your rage in a message but feared the repercuss
 
 ## 🎉 Features
 
-1. **Type**: Vent out your work frustrations while texting the real message you need to seend.
+1. **Type**: Vent out your work frustrations while writing your working e-mail
 2. **Click**: Let us work our magic!
-3. **Copy**: Receive a polite, respectful, and well-mannered version of your message to send.
+3. **Copy**: Receive a polite, respectful, and well-mannered version to send.
 4. **Send**: Share your refined feelings without burning any bridges.
 
 ## 🚀 Technologies
