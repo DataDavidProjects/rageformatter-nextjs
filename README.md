@@ -10,25 +10,25 @@
 
 **"Perche non ti pagano abbastanza da essere pure educato!"**
 
-Have you ever wanted to vent out your rage in a message but feared the repercussions? Well, say "Ciao!" to your problems, because **RageFormatter** is here!
+Have you ever wanted to vent out your rage in a message but feared the repercussions at work? Well, say "Ciao Ciao!" to your problems, because **RageFormatter** is here!
 
 ## 🎉 Features
 
-1. **Type**: Vent out your frustrations freely.
+1. **Type**: Vent out your work frustrations while texting the real message you need to seend.
 2. **Click**: Let us work our magic!
-3. **Copy**: Receive a polite, respectful, and well-mannered version of your message.
+3. **Copy**: Receive a polite, respectful, and well-mannered version of your message to send.
 4. **Send**: Share your refined feelings without burning any bridges.
 
 ## 🚀 Technologies
 
-- **Next.js**: For lightning-fast server-side rendering and a modern frontend framework.
-- **TailwindCSS**: Because we love beautiful, responsive design!
-- **TypeScript**: For that statically typed superpower.
+- **Next.js**: For server-side rendering and a modern frontend framework.
+- **TailwindCSS**: Because i need a beautiful, responsive design!
+- **TypeScript**: To let people think i am better than i actually am.
 - **OpenAI**: The brain behind transforming your fiery words into cool breezes.
 
 ## 🇮🇹 Made for Italians
 
-Because we know how passionate our words can get! This app understands and respects the Italian flair, turning even the most heated rants into polite prose.
+Because we know how passionate we can get! This app understands and respects the Italian flair, turning even the most heated rants into polite prose.
 
 ## 🍝 Usage
 
