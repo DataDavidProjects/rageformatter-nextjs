@@ -1,4 +1,5 @@
 # 🇮🇹 RageFormatter
+**"Perche non ti pagano abbastanza per essere educato!"**
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue)
 ![made with](https://img.shields.io/badge/made%20with-Next.js-blueviolet)
@@ -7,8 +8,6 @@
 ![powered by](https://img.shields.io/badge/powered%20by-OpenAI-red)
 
 ---
-
-**"Perche non ti pagano abbastanza per essere educato!"**
 
 Have you ever wanted to vent out your rage in a message but feared the repercussions at work? Well, say "Ciao Ciao!" to your problems, because **RageFormatter** is here!
 
