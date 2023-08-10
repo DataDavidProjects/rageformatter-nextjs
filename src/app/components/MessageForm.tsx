@@ -5,12 +5,22 @@ import Script from "next/script";
 const MessageForm: React.FC = () => {
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (message === "") {
       setResponse("");
     }
   }, [message]);
+
+  const Spinner: React.FC = () => (
+    <div className="relative w-20 h-20 mx-auto mt-5">
+      <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xs text-gray-800">
+        Loading...
+      </p>
+      <div className="border-y-2 border-red-800 rounded-full w-20 h-20 animate-spin"></div>
+    </div>
+  );
 
   const handleCopyToClipboard = () => {
     navigator.clipboard
@@ -25,6 +35,7 @@ const MessageForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
 
     const res = await fetch("/api/completion/", {
       method: "POST",
@@ -41,6 +52,7 @@ const MessageForm: React.FC = () => {
 
     const data = await res.json();
     setResponse(data.message.content);
+    setLoading(false);
   };
 
   return (
@@ -72,14 +84,19 @@ const MessageForm: React.FC = () => {
           cols={30}
           rows={10}
           className="p-2 w-full border rounded-md text-xs"
-          placeholder="Caro [utente], se lei non fosse un completo idiota troverebbe la risposta alla sua domanda nella mail precedente, inoltre non mi pagano abbastanza per tollerare queste cazzate"
+          placeholder="Caro [utente], se lei non fosse un completo idiota troverebbe la risposta alla sua domanda nella mail precedente. Cretino!"
         ></textarea>
-        <button
-          type="submit"
-          className="px-4 py-2 mx-20  text-white bg-red-700 rounded hover:bg-red-900"
-        >
-          Formatta
-        </button>
+
+        {loading ? (
+          <Spinner />
+        ) : (
+          <button
+            type="submit"
+            className="px-4 py-2 mx-20 text-white bg-red-700 rounded hover:bg-red-900"
+          >
+            Formatta
+          </button>
+        )}
       </form>
       {response && (
         <div className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col space-y-4 mt-10">
