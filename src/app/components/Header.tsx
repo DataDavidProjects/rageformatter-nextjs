@@ -2,10 +2,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-t from-red-600 to-red-900 text-white py-5 mb-auto">
+    <header className="bg-gradient-to-t from-red-700 to-red-900 text-white py-5 mb-auto">
       <div className="container mx-auto px-5 lg:px-0 text-center">
         <h1 className="text-2xl mb-4 font-bold tracking-tight">
-          RageFormatter
+          🤬RageFormatter 🇮🇹
         </h1>
 
         <p className="text-xs leading-relaxed">

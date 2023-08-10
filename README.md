@@ -1,4 +1,5 @@
 # 🇮🇹 RageFormatter
+
 **"Perche non ti pagano abbastanza per essere educato!"**
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue)
@@ -6,6 +7,7 @@
 ![style with](https://img.shields.io/badge/styled%20with-TailwindCSS-green)
 ![language](https://img.shields.io/badge/language-TypeScript-yellow)
 ![powered by](https://img.shields.io/badge/powered%20by-OpenAI-red)
+![Deployment Status](https://img.shields.io/badge/deployment-successful-brightgreen)
 
 ---
 

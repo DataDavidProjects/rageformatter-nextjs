@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { FaRegCopy } from "react-icons/fa";
 import Script from "next/script";
 const MessageForm: React.FC = () => {
   const [message, setMessage] = useState("");
@@ -10,6 +11,17 @@ const MessageForm: React.FC = () => {
       setResponse("");
     }
   }, [message]);
+
+  const handleCopyToClipboard = () => {
+    navigator.clipboard
+      .writeText(response)
+      .then(() => {
+        console.log("Text successfully copied to clipboard!");
+      })
+      .catch((err) => {
+        console.error("Unable to copy text to clipboard", err);
+      });
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -70,17 +82,26 @@ const MessageForm: React.FC = () => {
         </button>
       </form>
       {response && (
-        <div className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col  space-y-4 mt-10">
+        <div className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col space-y-4 mt-10">
           <p className="text-sm text-center text-gray-900">
             Quello che dirai ☕ :
           </p>
-          <textarea
-            value={response}
-            readOnly
-            cols={30}
-            rows={10}
-            className="mt-8 p-2 w-full border rounded-md text-xs bg-white"
-          />
+          <div className="relative mt-8">
+            <textarea
+              value={response}
+              readOnly
+              cols={30}
+              rows={10}
+              className="p-2 w-full border rounded-md text-xs bg-white"
+            />
+            <button
+              onClick={handleCopyToClipboard}
+              className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+              title="Copy to clipboard"
+            >
+              <FaRegCopy size={20} />{" "}
+            </button>
+          </div>
         </div>
       )}
     </div>
