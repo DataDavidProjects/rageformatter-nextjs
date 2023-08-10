@@ -72,7 +72,7 @@ const MessageForm: React.FC = () => {
           cols={30}
           rows={10}
           className="p-2 w-full border rounded-md text-xs"
-          placeholder="Sei un incredibile idiota e anche se lavorare con te mi disgusta dobbiamo rifare la presentazione assieme..."
+          placeholder="Caro [utente], se lei non fosse un completo idiota troverebbe la risposta alla sua domanda nella mail precedente, inoltre non mi pagano abbastanza per tollerare queste cazzate"
         ></textarea>
         <button
           type="submit"
@@ -96,10 +96,10 @@ const MessageForm: React.FC = () => {
             />
             <button
               onClick={handleCopyToClipboard}
-              className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+              className="absolute top-1 right-1 text-gray-600 hover:text-gray-900"
               title="Copy to clipboard"
             >
-              <FaRegCopy size={20} />{" "}
+              <FaRegCopy size={20} />
             </button>
           </div>
         </div>
