@@ -16,12 +16,14 @@ const TutorialPage = () => {
               <span className="mb-2 font-semibold block">
                 Write your frustrated message in the card form provided.
               </span>
-              <div className="relative w-80 h-80 mx-auto mt-4 rounded-md overflow-hidden shadow-md border  border-gray-200">
+              <div className="relative w-70% h-70%  mx-auto mt-4 rounded-md overflow-hidden shadow-md border border-gray-200 sm:w-80 h-80">
                 <Image
                   src="/rageformatterexample_input.png"
                   alt="Input screenshot for RageFormatter"
-                  layout="fill"
+                  layout="responsive"
                   objectFit="cover"
+                  width={100}
+                  height={101.6}
                 />
               </div>
             </li>
@@ -32,11 +34,13 @@ const TutorialPage = () => {
             <li className="font-semibold">
               A new card will appear below with a clean, polite version of your
               message.
-              <div className="relative w-80 h-80 mx-auto mt-4 rounded-md overflow-hidden shadow-md border border-gray-200">
+              <div className="relative w-70% h-70% mx-auto mt-4 rounded-md overflow-hidden shadow-md border border-gray-200 sm:w-80 h-90">
                 <Image
                   src="/rageformatterexample_output.png"
                   alt="Output screenshot from RageFormatter"
-                  layout="fill"
+                  width={100}
+                  height={101.6}
+                  layout="responsive"
                   objectFit="cover"
                 />
               </div>
