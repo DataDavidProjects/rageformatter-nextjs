@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { FaRegCopy } from "react-icons/fa";
 import Script from "next/script";
+import Link from "next/link";
+
 const MessageForm: React.FC = () => {
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
@@ -94,9 +96,15 @@ const MessageForm: React.FC = () => {
             type="submit"
             className="px-4 py-2 mx-20 text-white bg-red-700 rounded hover:bg-red-900"
           >
-            Formatta
+            Format
           </button>
         )}
+        <Link
+          href="/tutorial"
+          className="text-xs text-gray-500 text-center p-2"
+        >
+          <p> 🆘 Need help?: Go on the tutorial page</p>
+        </Link>
       </form>
       {response && (
         <div className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col space-y-4 mt-10">
