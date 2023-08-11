@@ -62,6 +62,9 @@ const TutorialPage = () => {
               Go back to the homepage
             </span>
           </Link>
+          <p className="text-sm text-white-600 p-5">
+            Supported Languages: 🇮🇹 🇬🇧
+          </p>
         </div>
       </div>
     </div>
