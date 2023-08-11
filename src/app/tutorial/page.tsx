@@ -16,7 +16,7 @@ const TutorialPage = () => {
               <span className="mb-2 font-semibold block">
                 Write your frustrated message in the card form provided.
               </span>
-              <div className="relative w-70% h-70%  mx-auto mt-4 rounded-md overflow-hidden shadow-md border border-gray-200 sm:w-80 h-80">
+              <div className="relative w-70% h-70%  mx-auto mt-4 rounded-md overflow-hidden shadow-md border border-gray-200 sm:w-80 h-90">
                 <Image
                   src="/rageformatterexample_input.png"
                   alt="Input screenshot for RageFormatter"
