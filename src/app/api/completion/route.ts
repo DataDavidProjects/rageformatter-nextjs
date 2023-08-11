@@ -1,4 +1,3 @@
-/* eslint react/no-unescaped-entities */
 import { NextRequest, NextResponse } from "next/server";
 import { Configuration, OpenAIApi } from "openai";
 
