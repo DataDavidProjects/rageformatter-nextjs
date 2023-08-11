@@ -51,11 +51,11 @@ const TutorialPage = () => {
           <p className="text-xs sm:text-sm font-medium sm:text-center mt-8">
             🚀 Now, send your message with confidence!
           </p>
-          <p className=" text-gray-600 hover:text-red-700 underline transition ease-in-out duration-150 sm:text-center text-xs">
-            ⚠️ Note: Always double check the answer, we are trying to optimize
-            the model.
-          </p>
         </div>
+        <p className=" text-gray-600 hover:text-red-700 underline transition ease-in-out duration-150 sm:text-center text-xs py-2">
+          ⚠️ Note: Always double check the answer, we are trying to optimize the
+          model.
+        </p>
         <div className="text-center">
           <Link href="/">
             <span className="cursor-pointer text-red-600 hover:text-red-700 underline transition ease-in-out duration-150">
