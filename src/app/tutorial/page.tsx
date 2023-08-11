@@ -9,8 +9,8 @@ const TutorialPage = () => {
         <h2 className="text-gray-900 text-xl mb-5 font-semibold tracking-tighter sm:text-center sm:text-2xl">
           Corporate Guidelines 🧑‍💼
         </h2>
-        <p>
-          This simple steps will turn your rage into a promotion in no time.
+        <p className="text-xs text-gray-600">
+          These simple steps will turn your rage into a promotion in no time.
         </p>
         <div className="bg-red-50 p-8 rounded-lg border border-red-200 mb-10">
           <ul className="list-decimal pl-5 space-y-6">
