@@ -75,7 +75,7 @@ const MessageForm: React.FC = () => {
         className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col  space-y-4"
       >
         <label htmlFor="message" className="text-sm text-center text-gray-900">
-          Quello che pensi 👇:
+          What you really think 👇:
         </label>
         <textarea
           required
@@ -109,7 +109,7 @@ const MessageForm: React.FC = () => {
       {response && (
         <div className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col space-y-4 mt-10">
           <p className="text-sm text-center text-gray-900">
-            Quello che dirai ☕ :
+            What you will actually say ☕ :
           </p>
           <div className="relative mt-8">
             <textarea
