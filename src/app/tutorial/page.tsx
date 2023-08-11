@@ -25,7 +25,10 @@ const TutorialPage = () => {
                 />
               </div>
             </li>
-            <li className="font-semibold">Click on the "Format" button.</li>
+            <li className="font-semibold">
+              Click on the &quot;Format&quot; button.
+            </li>
+
             <li className="font-semibold">
               A new card will appear below with a clean, polite version of your
               message.
