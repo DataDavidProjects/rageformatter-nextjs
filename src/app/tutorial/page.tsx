@@ -19,8 +19,8 @@ const TutorialPage = () => {
       </div>
 
       <div className="relative flex  m-6 text-sm items-center justify-center ">
-        <div className="max-w-3xl bg-white px-5 pb-10 rounded-xl shadow-2xl w-full text-gray-900">
-          <h2 className="text-gray-900 text-xl mb-5 font-semibold tracking-tighter text-center sm:text-2xl mt-2">
+        <div className="max-w-3xl bg-white px-5 pb-10 rounded-xl shadow-2xl w-full text-gray-600 ">
+          <h2 className=" text-gray-600  text-xl mb-5 font-semibold tracking-tighter text-center sm:text-2xl mt-2">
             Corporate Guidelines 🧑‍💼
           </h2>
           <p className="text-xs text-gray-600">

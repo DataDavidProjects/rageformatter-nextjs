@@ -10,9 +10,10 @@ const Header = () => {
             🤬 RageFormatter
           </h1>
         </Link>
-        <div className="flex justify-center gap-40 sm:mx-20 lg:mx-60 my-2 font-sans text-sm font-bold">
+        <div className="flex  justify-between gap-10 sm:mx-20 lg:mx-60 my-2 font-sans text-sm font-bold">
           <Link href={"/"}> 🏢 Home</Link>
           <Link href={"/tutorial"}>👨‍🏫 How it works</Link>
+          <Link href={"/info"}>👨📝 Q&A</Link>
         </div>
       </div>
     </header>
