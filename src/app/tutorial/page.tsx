@@ -11,7 +11,7 @@ const TutorialPage = () => {
           repercussions at work?
         </p>
         <p>
-          Well, say "Ciao Ciao!" to your problems, because RageFormatter is
+          Well, say {'"Ciao Ciao!"'} to your problems, because RageFormatter is
           here!
         </p>
       </div>
