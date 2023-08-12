@@ -95,7 +95,7 @@ const MessageForm: React.FC = () => {
         </Link>
       </form>
       {response && (
-        <div className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col space-y-4 mt-10">
+        <div className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col space-y-4 my-10">
           <p className="text-sm text-center text-gray-900">
             What you will actually say ☕ :
           </p>
