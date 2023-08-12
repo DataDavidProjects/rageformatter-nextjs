@@ -9,10 +9,6 @@ const Header = () => {
           <h1 className="text-2xl mb-3 font-bold tracking-tight">
             🤬 RageFormatter
           </h1>
-          <p className="text-sm text-white-600">
-            Convert your office rage into polite and positive messages. Because
-            they do not pay you enough to be polite!
-          </p>
         </Link>
         <div className="flex justify-center gap-40 sm:mx-20 lg:mx-60 my-2 font-sans text-sm font-bold">
           <Link href={"/"}> 🏢 Home</Link>
