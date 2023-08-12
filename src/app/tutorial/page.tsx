@@ -4,21 +4,23 @@ import Image from "next/image";
 
 const TutorialPage = () => {
   return (
-    <div>
-      <div className="text-xs text-gray-600 text-center mx-auto">
-        <p>
-          Have you ever wanted to vent out your rage in a message but feared the
-          repercussions at work?
-        </p>
-        <p>
-          Well, say {'"Ciao Ciao!"'} to your problems, because RageFormatter is
-          here!
-        </p>
+    <div className=" w-full ">
+      <div>
+        <div className="flex flex-col items-center text-s text-gray-600 space-y-2 mx-5 pt-3">
+          <p className="text-justify w-96 md:w-full md:text-center">
+            Have you ever wanted to vent out your rage in a message but feared
+            the repercussions at work?
+          </p>
+          <p className="text-justify w-96 md:w-full md:text-center">
+            Well, say "Ciao Ciao!" to your problems, because RageFormatter is
+            here!
+          </p>
+        </div>
       </div>
 
-      <div className="relative flex  m-6 text-sm items-center justify-center  px-4">
-        <div className="max-w-3xl bg-white px-10 pb-10 rounded-lg shadow-xl w-full text-gray-900">
-          <h2 className="text-gray-900 text-xl mb-5 font-semibold tracking-tighter sm:text-center sm:text-2xl">
+      <div className="relative flex  m-6 text-sm items-center justify-center ">
+        <div className="max-w-3xl bg-white px-5 pb-10 rounded-xl shadow-2xl w-full text-gray-900">
+          <h2 className="text-gray-900 text-xl mb-5 font-semibold tracking-tighter text-center sm:text-2xl mt-2">
             Corporate Guidelines 🧑‍💼
           </h2>
           <p className="text-xs text-gray-600">
@@ -44,7 +46,6 @@ const TutorialPage = () => {
               <li className="font-semibold text-xs">
                 Click on the Format button.
               </li>
-
               <li className="font-semibold text-xs">
                 A new card will appear below with a clean, polite version of
                 your message.
@@ -52,9 +53,9 @@ const TutorialPage = () => {
                   <Image
                     src="/rageformatterexample_output.png"
                     alt="Output screenshot from RageFormatter"
+                    layout="responsive"
                     width={100}
                     height={101.6}
-                    layout="responsive"
                     objectFit="cover"
                   />
                 </div>
