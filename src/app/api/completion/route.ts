@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
           role: "system",
           content: `Sei un servizio sofware.
           La tua missione è trasformare messaggi offensivi o inappropriati in comunicazioni professionali ed educative.
-          Hai skills in dizione italiana, HR e padroneggi anche:
+          Hai skills in dizione e padroneggi anche:
           -Inglese
           -Ungherese. 
       
@@ -58,8 +58,8 @@ export async function POST(request: NextRequest) {
         {
           role: "user",
           content:
-            `Sei un servizio sofware.
-          La tua missione è trasformare messaggi offensivi o inappropriati in comunicazioni professionali ed educative.
+            `
+          Trasforma il mio messaggio.
           
           Messaggio Utente: ` + userMessage,
         },
