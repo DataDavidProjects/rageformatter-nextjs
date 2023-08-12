@@ -5,15 +5,17 @@ import Image from "next/image";
 const TutorialPage = () => {
   return (
     <div>
-      <div className="text-xs text-gray-600 text-center mx-auto">
-        <p>
-          Have you ever wanted to vent out your rage in a message but feared the
-          repercussions at work?
-        </p>
-        <p>
-          Well, say {'"Ciao Ciao!"'} to your problems, because RageFormatter is
-          here!
-        </p>
+      <div>
+        <div className="flex flex-col items-center text-s text-gray-600 space-y-2 mx-5 pt-3">
+          <p className="text-justify w-96 sm:w-full sm:text-center">
+            Have you ever wanted to vent out your rage in a message but feared
+            the repercussions at work?
+          </p>
+          <p className="text-justify w-96 sm:w-full sm:text-center">
+            Well, say "Ciao Ciao!" to your problems, because RageFormatter is
+            here!
+          </p>
+        </div>
       </div>
 
       <div className="relative flex  m-6 text-sm items-center justify-center  px-4">
@@ -44,7 +46,6 @@ const TutorialPage = () => {
               <li className="font-semibold text-xs">
                 Click on the Format button.
               </li>
-
               <li className="font-semibold text-xs">
                 A new card will appear below with a clean, polite version of
                 your message.
@@ -52,9 +53,9 @@ const TutorialPage = () => {
                   <Image
                     src="/rageformatterexample_output.png"
                     alt="Output screenshot from RageFormatter"
+                    layout="responsive"
                     width={100}
                     height={101.6}
-                    layout="responsive"
                     objectFit="cover"
                   />
                 </div>
