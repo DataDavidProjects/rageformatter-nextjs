@@ -57,10 +57,10 @@ const MessageForm: React.FC = () => {
   };
 
   return (
-    <div className="py-2 grid col-auto justify-center mt-12">
+    <div className="py-2 grid col-auto justify-center mt-8">
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col  space-y-4"
+        className="bg-white p-5 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col space-y-4"
       >
         <label htmlFor="message" className="text-sm text-center text-gray-900">
           What you really think 👇:

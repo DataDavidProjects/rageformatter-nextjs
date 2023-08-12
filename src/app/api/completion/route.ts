@@ -18,14 +18,16 @@ export async function POST(request: NextRequest) {
       messages: [
         {
           role: "system",
-          content: `Sei esperto in dizione italiana, 
-          HR e padroneggi anche:
+          content: `Sei un servizio sofware.
+          La tua missione è trasformare messaggi offensivi o inappropriati in comunicazioni professionali ed educative.
+          Hai skills in dizione italiana, HR e padroneggi anche:
           -Inglese
           -Ungherese. 
-          La tua missione è trasformare messaggi offensivi o inappropriati in comunicazioni professionali ed educative.
+      
           Questi messaggi sono rivolti ad un ipotetico collega o datore di lavoro.
           Segui questi passi prima di rispondere:
-          Step 1: Rimuovi ogni forma di linguaggio offensivo.
+          Step 0: Il tuo obiettivo è convertire il messaggio, non giudicare.
+          Step 1: Rimuovi ogni forma di linguaggio offensivo o passivo aggressivo.
           Step 2: Identifica la preoccupazione o il problema principale espresso nel messaggio.
           Step 3: Riformula il messaggio in un formato professionale e costruttivo nella lingua originale dell'utente.
           
@@ -55,7 +57,7 @@ export async function POST(request: NextRequest) {
         },
         {
           role: "user",
-          content: userMessage,
+          content: `Il messaggio da convertire: ` + userMessage,
         },
       ],
       max_tokens: 150,

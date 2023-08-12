@@ -9,8 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Rage Formatter",
-  description:
-    "Rage Formatter è la webapp che trasforma la rabbia verso il tuo capo e i colleghi in un messaggio formale e positivo. ",
+  description: "Rage Formatter è la webapp che trasforma la rabbia ... ",
 };
 
 export default function RootLayout({
@@ -21,14 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="mx-auto">
-          <Script
-            data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID}
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            strategy="afterInteractive"
-          />
-          <Header />
-          {children}
+        <Script
+          data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID}
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          strategy="afterInteractive"
+        />
+        <Header />
+        <div className="app-container">
+          <div className="main-content">{children}</div>
           <Footer />
         </div>
       </body>

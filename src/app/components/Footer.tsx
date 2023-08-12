@@ -4,7 +4,7 @@ import { VscGithub } from "react-icons/vsc";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-red-700 to-red-900 text-white py-6 mt-auto flex flex-col items-center space-y-4">
+    <footer className="bg-gradient-to-b from-red-700 to-red-900 text-white py-6 mt-auto flex flex-col items-center space-y-4 footer">
       <p>🇮🇹 © RageFormatter 🍝</p>
       <p className="text-sm">
         Supported Languages:

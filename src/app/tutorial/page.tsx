@@ -30,7 +30,8 @@ const TutorialPage = () => {
             <ul className="list-decimal pl-5 space-y-6">
               <li>
                 <span className="mb-2 font-semibold block text-xs">
-                  Write your frustrated message in the card form provided.
+                  Write your frustrated message in the card form provided. (Try
+                  be precise with the subject and context)
                 </span>
                 <div className="relative w-70% h-70%  mx-auto mt-4 rounded-md overflow-hidden shadow-md border border-gray-200 sm:w-80 h-90">
                   <Image
