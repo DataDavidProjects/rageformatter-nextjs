@@ -105,7 +105,7 @@ const MessageForm: React.FC = () => {
               readOnly
               cols={30}
               rows={10}
-              className="p-2 w-full border rounded-md text-xs bg-white"
+              className="p-2 w-full border rounded-md text-xs bg-white pb-5"
             />
             <button
               onClick={handleCopyToClipboard}
