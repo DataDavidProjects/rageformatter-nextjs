@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const TutorialPage = () => {
   return (
-    <div className=" w-full sm:mx-12">
-      <div>
+    <div className=" w-full ">
+      <div className="mx-5">
         <div className="flex flex-col items-center text-s text-gray-600 space-y-2 mx-5 pt-3">
           <p className="text-justify w-96 md:w-full md:text-center">
             Have you ever wanted to vent out your rage in a message but feared
@@ -18,12 +18,12 @@ const TutorialPage = () => {
         </div>
       </div>
 
-      <div className="relative flex  m-6 text-sm items-center justify-center  px-2">
+      <div className="relative flex  m-6 text-sm items-center justify-center ">
         <div className="max-w-3xl bg-white px-5 pb-10 rounded-xl shadow-2xl w-full text-gray-900">
           <h2 className="text-gray-900 text-xl mb-5 font-semibold tracking-tighter text-center sm:text-2xl mt-2">
             Corporate Guidelines 🧑‍💼
           </h2>
-          <p className="text-xs text-gray-600">
+          <p className="text-xs text-gray-600 mb-2">
             These simple steps will turn your rage into a promotion in no time.
           </p>
           <div className="bg-red-50 p-8 rounded-lg border border-red-200 mb-10">
