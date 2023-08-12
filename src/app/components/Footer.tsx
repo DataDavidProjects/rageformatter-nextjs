@@ -3,9 +3,10 @@ import Link from "next/link";
 import { VscGithub } from "react-icons/vsc";
 
 const Footer = () => {
+  const current_year = new Date().getFullYear();
   return (
-    <footer className="bg-gradient-to-b from-red-700 to-red-900 text-white py-6 mt-auto flex flex-col items-center space-y-4 footer">
-      <p>🇮🇹 © RageFormatter 🍝</p>
+    <footer className="bg-gradient-to-b from-red-700 to-red-900 text-white py-6 mt-auto flex flex-col items-center space-y-4 ">
+      <p>🇮🇹 © {current_year} RageFormatter 🍝</p>
       <p className="text-sm">
         Supported Languages:
         <span> 🇮🇹 🇬🇧</span>

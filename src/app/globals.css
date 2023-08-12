@@ -7,20 +7,19 @@ body {
   height: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Use a flex container to structure your main content and footer */
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 72.5vh; /* Use viewport height to ensure full screen coverage */
+  min-height: 72vh; /* Use viewport height to ensure full screen coverage */
 }
 
 /* Your main content should expand as needed */
 .main-content {
   flex: 1;
-}
-
-footer {
-  width: 100%;
-  flex-shrink: 0; /* don’t shrink */
-  flex-grow: 0; /* don’t grow */
 }
