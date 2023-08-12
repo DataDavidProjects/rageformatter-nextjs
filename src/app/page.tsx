@@ -8,7 +8,7 @@ export default function Home() {
       <div className="flex flex-col text-center text-sm text-gray-600 space-y-2 m-5">
         <p>Because they do not pay you enough to be also polite!</p>
         <Link href={"/tutorial"}>
-          <p className="underline">Find out how it works</p>
+          <p className="underline">Find out how it works!</p>
         </Link>
       </div>
       <MessageForm />
