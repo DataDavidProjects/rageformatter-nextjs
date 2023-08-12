@@ -32,7 +32,10 @@ const InfoPage = () => {
           <strong>How optimized is the model?</strong>
           <p>
             While the model is functional, it{`'`}s still being optimized. If it
-            doesn{`'`}t provide the desired output, feel free to try again!
+            doesn{`'`}t provide the desired output, feel free to try again! If
+            the answer is truncated is becuase you have reached a pre defined
+            token limit for your answer. These limits ensure the website to work
+            properly for all users.
           </p>
         </li>
         <li>
