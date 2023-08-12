@@ -31,17 +31,17 @@ const InfoPage = () => {
         <li>
           <strong>How optimized is the model?</strong>
           <p>
-            While the model is functional, it's still being optimized. If it
-            doesn't provide the desired output, feel free to try again!
+            While the model is functional, it{`'`}s still being optimized. If it
+            doesn{`'`}t provide the desired output, feel free to try again!
           </p>
         </li>
         <li>
-          <strong>Why isn't it working sometimes?</strong>
+          <strong>Why isn{`'`}t it working sometimes?</strong>
           <p>
-            There's a set limit for the number of requests to ensure smooth
-            operation. If it's not working, you might have reached that limit.
-            Just try again later or consider helping us with a donation to keep
-            the app running.
+            There{`'`}s a set limit for the number of requests to ensure smooth
+            operation. If it{`'`}s not working, you might have reached that
+            limit. Just try again later or consider helping us with a donation
+            to keep the app running.
           </p>
         </li>
         <li>
