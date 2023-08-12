@@ -42,7 +42,7 @@ const TutorialPage = () => {
                 </div>
               </li>
               <li className="font-semibold text-xs">
-                Click on the &quot;Format&quot; button.
+                Click on the {'"Format"'} button.
               </li>
 
               <li className="font-semibold text-xs">
