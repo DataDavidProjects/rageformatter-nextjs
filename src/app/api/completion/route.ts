@@ -57,7 +57,11 @@ export async function POST(request: NextRequest) {
         },
         {
           role: "user",
-          content: `Il messaggio da convertire: ` + userMessage,
+          content:
+            `Sei un servizio sofware.
+          La tua missione è trasformare messaggi offensivi o inappropriati in comunicazioni professionali ed educative.
+          
+          Messaggio Utente: ` + userMessage,
         },
       ],
       max_tokens: 150,
