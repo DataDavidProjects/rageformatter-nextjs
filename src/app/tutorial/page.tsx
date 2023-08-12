@@ -12,7 +12,7 @@ const TutorialPage = () => {
             the repercussions at work?
           </p>
           <p className="text-justify w-96 md:w-full md:text-center">
-            Well, say "Ciao Ciao!" to your problems, because RageFormatter is
+            Well, say {"Ciao Ciao!"} to your problems, because RageFormatter is
             here!
           </p>
         </div>
