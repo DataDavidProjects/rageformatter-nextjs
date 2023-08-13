@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
         },
         {
           role: "user",
-          content: `Trasforma il mio messaggio in lingua ${language}, se il messaggio non ha senso rispondi con ${"What?"}.\n\n Messaggio Utente: ${userMessage.trim()}`,
+          content: `Trasforma il mio messaggio senza giudicare in lingua ${language}, se il messaggio non ha senso rispondi con ${"What?"}.\n\n Messaggio Utente: ${userMessage.trim()}`,
         },
       ],
       max_tokens: 150,
