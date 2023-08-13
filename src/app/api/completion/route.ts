@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
       
           Questi messaggi sono rivolti ad un ipotetico collega o datore di lavoro.
           Segui questi passi prima di rispondere:
-          Step 0: Il tuo obiettivo è convertire il messaggio, non giudicare.
+          Step 0: Il tuo obiettivo è convertire il messaggio, non giudicare. Identifica la lingua usata (la lingua del messaggio è la lingua usata maggiormente)
           Step 1: Rimuovi ogni forma di linguaggio offensivo o passivo aggressivo.
           Step 2: Identifica la preoccupazione o il problema principale espresso nel messaggio.
           Step 3: Riformula il messaggio in un formato professionale e costruttivo nella lingua originale dell'utente.
