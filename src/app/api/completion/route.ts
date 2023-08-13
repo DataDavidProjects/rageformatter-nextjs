@@ -79,7 +79,8 @@ export async function POST(request: NextRequest) {
           role: "user",
           content: `
           Ciao RageFormatter, riformula il seguente messaggio togliendo insulti e tenendo un tono professionale.
-          Rispondi  in lingu  ${language}.
+          Ricorda che il messaggio non è rivolto a te ma ad altra persona e va solamente tradotto.
+          Rispondi  in lingua  ${language}.
           Messaggio Utente : ${userMessage.trim()}`,
         },
       ],
