@@ -62,9 +62,11 @@ const TutorialPage = () => {
                 </div>
               </li>
             </ul>
-            <p className="text-xs sm:text-sm font-medium sm:text-center mt-8">
-              🚀 Now, send your message with confidence!
-            </p>
+            <Link href="/">
+              <p className="text-xs sm:text-sm font-medium sm:text-center mt-8">
+                🚀 Now, send your message with confidence!
+              </p>
+            </Link>
           </div>
           <p className=" text-gray-600 hover:text-red-700 underline transition ease-in-out duration-150 sm:text-center text-xs py-2">
             ⚠️ Note: Always double check the answer, we are trying to optimize
@@ -76,7 +78,7 @@ const TutorialPage = () => {
                 Go back to the homepage
               </span>
             </Link>
-            <p className="text-sm text-white-600 p-5">Supported Languages:</p>
+            <p className="text-sm text-white-600 pt-8">Supported Languages:</p>
             <span>🇮🇹 🇬🇧</span>
           </div>
         </div>
