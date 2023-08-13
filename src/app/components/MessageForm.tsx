@@ -7,6 +7,7 @@ const MessageForm: React.FC = () => {
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
+  const [language, setLanguage] = useState("english"); // Default language is English
 
   useEffect(() => {
     if (message === "") {
@@ -43,7 +44,7 @@ const MessageForm: React.FC = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ messages: { user: message } }),
+      body: JSON.stringify({ messages: { user: message, language: language } }),
     });
 
     if (!res.ok) {
@@ -56,14 +57,30 @@ const MessageForm: React.FC = () => {
     setLoading(false);
   };
 
+  const toggleLanguage = () => {
+    setLanguage(language === "english" ? "italian" : "english");
+  };
+
   return (
     <div className="py-2 grid col-auto justify-center mt-8">
+      <div className="mb-4 text-center">
+        <button
+          onClick={toggleLanguage}
+          className="px-2 py-1 text-xs font-semibold text-gray-600 hover:text-gray-900"
+        >
+          {language === "english"
+            ? "Switch to Italian 🇮🇹 "
+            : "Switch to English 🇬🇧 "}
+        </button>
+      </div>
       <form
         onSubmit={handleSubmit}
         className="bg-white p-5 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col space-y-4"
       >
         <label htmlFor="message" className="text-sm text-center text-gray-900">
-          What you really think 👇:
+          {language === "english"
+            ? "What you really think 👇:"
+            : "Quello che pensi veramente 👇:"}
         </label>
         <textarea
           required
@@ -74,7 +91,11 @@ const MessageForm: React.FC = () => {
           cols={30}
           rows={10}
           className="p-2 w-full border rounded-md text-xs"
-          placeholder="Caro [utente], se lei non fosse un completo idiota troverebbe la risposta alla sua domanda nella mail precedente. Cretino!"
+          placeholder={
+            language === "english"
+              ? "Dear [recipient], if you weren't a complete idiot, you would find the answer to your question in the previous email. You Moron!"
+              : "Caro [destinatario], se non fossi un idiota completo, troveresti la risposta alla tua domanda nell'email precedente. Imbecille!"
+          }
         ></textarea>
 
         {loading ? (
@@ -84,20 +105,26 @@ const MessageForm: React.FC = () => {
             type="submit"
             className="px-4 py-2 mx-20 text-white bg-red-700 rounded hover:bg-red-900"
           >
-            Format
+            {language === "english" ? "Format" : "Formatta"}
           </button>
         )}
         <Link
           href="/tutorial"
           className="text-xs text-gray-500 text-center p-2"
         >
-          <p> 🆘 Need help?: Go on the tutorial page</p>
+          <p>
+            {language === "english"
+              ? "🆘 Need help?: Go to the tutorial page"
+              : "🆘 Hai bisogno di aiuto? Vai alla pagina tutorial"}
+          </p>
         </Link>
       </form>
       {response && (
         <div className="bg-white p-6 max-w-sm mx-auto rounded-2xl shadow-lg flex flex-col space-y-4 my-10">
           <p className="text-sm text-center text-gray-900">
-            What you will actually say ☕ :
+            {language === "english"
+              ? "What you will actually say ☕ :"
+              : "Quello che dirai effettivamente ☕ :"}
           </p>
           <div className="relative mt-8">
             <textarea
@@ -110,7 +137,11 @@ const MessageForm: React.FC = () => {
             <button
               onClick={handleCopyToClipboard}
               className="absolute top-1 right-1 text-gray-600 hover:text-gray-900"
-              title="Copy to clipboard"
+              title={
+                language === "english"
+                  ? "Copy to clipboard"
+                  : "Copia negli appunti"
+              }
             >
               <FaRegCopy size={20} />
             </button>

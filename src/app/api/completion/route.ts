@@ -5,6 +5,7 @@ export async function POST(request: NextRequest) {
   try {
     const { messages } = await request.json();
     const userMessage = messages?.user || "";
+    const language = messages?.language || "english";
 
     const configuration = new Configuration({
       // organization: 'org-*',
@@ -58,11 +59,7 @@ export async function POST(request: NextRequest) {
         },
         {
           role: "user",
-          content:
-            `
-          Trasforma il mio messaggio.
-          
-          Messaggio Utente: ` + userMessage,
+          content: `Trasforma il mio messaggio in lingua ${language}.\n\n Messaggio Utente: ${userMessage}`,
         },
       ],
       max_tokens: 150,
