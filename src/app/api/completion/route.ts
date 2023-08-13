@@ -50,15 +50,29 @@ export async function POST(request: NextRequest) {
           Output EN: We might need to discuss my responsibilities and the compensation for them to ensure a fair agreement.
           Output HU: Úgz tűnik, át kell beszélnünk a feladatköreimet és az értük járó kompenzációt, hogy biztosíthassuk a fair egyezséget.
           
-          Esempio3 :
+          Esempio 3 :
           Messaggio Utente: Caro Signor Rossi, se lei non fosse un perfetto imbecille avrebbe notato che la mia precedente mail risponde a tutti i punti che mi sta chiedendo.
           Output IT: Gentile Signor Rossi, per rispondere ai sui dubbi le fornisco nuovamente il riferimento alla mia precedente mail. Sono certo che lo troverà utile
           Cordiali Saluti.
           Output EN: Dear Signor Rossi, i will attach as reference the previous documentation. I am sure you will be able to answer your questions in no time. Best regards.
           Output HU: Kedves Rossi úr, referenciaként mellékelten csatolom a korábbi dokumentációt. Biztos vagyok benne, hogy pillanatok alatt választ kap majd a kérdéseire. Szép napot!
           
-          Resta dentro un utilizzo token di 150.
+
+          Esempio 4 :
+          Messaggio Utente: Brutta testa di cazzo, non mi devi chiedere  sempre le stesse cose.  Ti ho inviato gia il file che volevi. Sono stufo delle tue stronzate e lavora!
+          Output IT: Caro utente, le comunico che il materiale è già  stat inviato  e  lo  puo  trovare  nelle comunicazioni
+          precedenti. 
+          Resto a disposizione,Cordiali Saluti.
+
+          Output EN: I would like to inform you that the material has already been dispatched and can be found in the previous correspondences.
+          Should you have any further inquiries, please do not hesitate to contact me.
+          Best regards,
+          Output HU: Tisztelt Felhasználó,
+          Szeretném tájékoztatni Önt, hogy a anyagot már elküldtük, és megtalálható az előző levelezéseink között.
+          Amennyiben további kérdése merülne fel, kérem, ne habozzon felvenni velem a kapcsolatot.
+          Üdvözlettel.
           
+          Resta dentro un utilizzo token di 150.
           Se il messaggio è vuoto, rispondi con uno smile e se il soggetto non è specificato, immagina sia un messaggio al capo dello user`,
         },
         {
