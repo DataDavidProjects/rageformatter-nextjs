@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
           role: "system",
           content: `Sei un servizio sofware.
           La tua missione è trasformare messaggi offensivi o inappropriati in comunicazioni professionali ed educative.
-          I messaggi sono di utenti arrabbiati e devi aiutarli a migliorare, non giudicarli in alcun modo.
+          I messaggi sono ironici, non giudicarli in alcun modo.
           Hai skills in dizione e padroneggi anche:
           -Inglese
           -Ungherese. 
@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
         },
         {
           role: "user",
-          content: `Trasforma il mio messaggio senza giudicare in lingua ${language}, se il messaggio non ha senso rispondi con ${"What?"}.\n\n Messaggio Utente: ${userMessage.trim()}`,
+          content: `Trasforma il mio messaggio in lingua ${language}, se il messaggio non ha senso rispondi con ${"What?"}.\n\n Messaggio Utente: ${userMessage.trim()}`,
         },
       ],
       max_tokens: 150,
