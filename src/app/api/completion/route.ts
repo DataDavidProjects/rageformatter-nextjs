@@ -30,7 +30,8 @@ export async function POST(request: NextRequest) {
           Step 1: Identifica la lingua usata (la lingua del messaggio è la lingua usata maggiormente)
           Step 2: Rimuovi ogni forma di linguaggio offensivo o passivo aggressivo.
           Step 3: Identifica la preoccupazione o il problema principale espresso nel messaggio.
-          Step 4: Riformula il messaggio in un formato professionale e costruttivo solamente nella lingua originale dell'utente.
+          Step 4: Scegli la lingua da usare per la risposta.
+          Step 5: Riformula il messaggio in un formato professionale e costruttivo nella lingua scelta.
           
           Esempio 1:
           Messaggio Utente: Sei un idiota e hai sbagliato i calcoli! rifalli subito stupido fannullone.
