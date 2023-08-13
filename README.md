@@ -25,11 +25,19 @@ Have you ever wanted to vent out your rage in a message but feared the repercuss
 - **Next.js**: For server-side rendering and a modern frontend framework.
 - **TailwindCSS**: Because i need a beautiful, responsive design!
 - **TypeScript**: To let people think i am better than i actually am.
-- **OpenAI**: The brain behind transforming your fiery words into cool breezes.
+- **OpenAI**: The AI behind the scene, transforming your fiery words into lame corporate lingo.
 
-## 🇮🇹 Made for Italians
+## 🇮🇹 Made by Italians 
 
-Because we know how passionate we can get! This app understands and respects the Italian flair, turning even the most heated rants into polite office prose.
+Because we know how passionate we can get! The web app is turning even the most heated rants into polite lame office prose.
+
+Supported Languages:
+-  🇮🇹
+-  🇬🇧
+  
+Coming soon:
+-  🇭🇺
+-  🇷🇺
 
 ## 🍝 Usage
 
@@ -40,12 +48,12 @@ Because we know how passionate we can get! This app understands and respects the
 
 ## 📌 Notes
 
-While the app is a fun tool, always make sure to double-check your messages before sending them. It's always good to ensure your message is conveyed correctly.
+The app is a fun tool and is not intended as a commercial product, always make sure to double-check your messages.
 
 ## 🤝 Contribute
 
-Fancy a tweak? Found a way to make it even cooler? Contributions are welcome! Fork and submit a pull request.
-"Senza stare addosso pero.."
+Found a way to make it even cooler? Contributions are welcome! Fork and submit a pull request.
+
 
 ## 💌 Feedback
 
