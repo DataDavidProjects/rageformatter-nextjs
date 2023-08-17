@@ -8,8 +8,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rage Formatter",
-  description: "Rage Formatter è la webapp che trasforma la rabbia ... ",
+  title: "🤬 RageFormatter",
+  description: "Rage Formatter è la webapp che trasforma la rabbia da ufficio in un messaggio formale e costruttivo.",
 };
 
 export default function RootLayout({
