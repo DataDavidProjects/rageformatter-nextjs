@@ -2,6 +2,14 @@ import React from "react";
 import MessageForm from "./components/MessageForm";
 import Link from "next/link";
 
+
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Rage Formatter - Home",
+  description: "Rage Formatter è la webapp che transforma la tua rabbia da ufficio in un messaggio formale e costruttivo.",
+};
+
+
 export default function Home() {
   return (
     <main className=" app-container bg-slate-100">
