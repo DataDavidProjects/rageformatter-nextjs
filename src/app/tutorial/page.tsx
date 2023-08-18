@@ -7,13 +7,13 @@ const TutorialPage = () => {
     <div className=" w-full ">
       <div>
         <div className="flex flex-col items-center text-s text-gray-600 space-y-2 mx-5 pt-3">
-          <p className="text-justify w-96 md:w-full md:text-center px-2">
+          <p className="text-justify w-96 text-xs md:w-full md:text-center px-2 text-xs">
             Have you ever wanted to vent out your rage in a message but feared
             the repercussions at work?
           </p>
           <p className="text-justify w-96 md:w-full md:text-center px-2">
             Well, say {"Ciao Ciao!"} to your problems, because RageFormatter is
-            here!
+            here! We help transforming your passionate messages into polite and professional prose.
           </p>
         </div>
       </div>
