@@ -11,7 +11,7 @@ const TutorialPage = () => {
             Have you ever wanted to vent out your rage in a message but feared
             the repercussions at work?
           </p>
-          <p className="text-justify w-96 md:w-full md:text-center px-2">
+          <p className="text-justify text-xs w-96 md:w-full md:text-center px-2 md:text-xs">
             Well, say {"Ciao Ciao!"} to your problems, because RageFormatter is
             here! We help transforming your passionate messages into polite and professional prose.
           </p>
