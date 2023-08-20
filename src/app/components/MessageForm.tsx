@@ -62,7 +62,7 @@ const MessageForm: React.FC = () => {
   };
 
   return (
-    <div className="py-2 grid col-auto justify-center mt-8">
+    <div className="py-2 grid col-auto justify-center mt-1 mb-4">
       <div className="mb-4 text-center">
         <button
           onClick={toggleLanguage}
