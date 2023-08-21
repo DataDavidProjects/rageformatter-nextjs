@@ -27,8 +27,8 @@ const InfoPage = () => {
           <li className="mb-4">
             <strong>Do you save my messages or data?</strong>
             <p>
-              Absolutely No! RageFormatter do not store any data and is
-              completeley anonymus. Your messages however might be part of
+              Absolutely No! RageFormatter does not store any data and is
+              completeley anonymous. Your messages however might be part of
               OpenAI collections but never connected directley to you.
               Rageformatter is safe and built with no commercal intensions.
             </p>
