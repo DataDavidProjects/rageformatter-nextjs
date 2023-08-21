@@ -14,8 +14,8 @@ export default function Home() {
     <div className="bg-slate-100 min-h-screen flex flex-col justify-between">
       <main className="flex-1 p-5 text-sm text-gray-600 flex flex-col items-center space-y-6">
         <p className="text-justify max-w-2xl mx-auto">
-          RageFormatter transforms your office rage into a chance to get
-          promoted. Write your angry message inside the card and let the AI
+          RageFormatter transforms your office rage into an opportunity for a
+          promotion. Write your angry message inside the card and let the AI
           convert it into a polite and positive version to send. Completely for
           Free.
         </p>
