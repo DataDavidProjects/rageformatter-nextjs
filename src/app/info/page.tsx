@@ -36,7 +36,7 @@ const InfoPage = () => {
           <li className="mb-4">
             <strong>Who developed RageFormatter?</strong>
             <p>
-              RageFormatter is a sideproject created by{" "}
+              RageFormatter is a side-project created by{" "}
               <Link
                 href={"https://www.linkedin.com/in/davide-lupis-448578153/"}
                 className="underline transition ease-in-out duration-150"
@@ -51,13 +51,13 @@ const InfoPage = () => {
               >
                 GitHub repository
               </Link>
-              {} and contibute to it.
+              {} and contribute.
             </p>
           </li>
           <li className="mb-4">
             <strong>How optimized is the model?</strong>
             <p>
-              While the model is functional, {"it's"} still being optimized. If
+              The model is functioning, but {"it's"} still being optimized. If
               it
               {"doesn't"} provide the desired output, feel free to try again! If
               the answer is truncated is because you have reached a pre defined
@@ -68,20 +68,22 @@ const InfoPage = () => {
           <li className="mb-4">
             <strong>Why the conversion {"isn't"} it working?</strong>
             <p>
-              {" There's"} a set limit for the number of requests to ensure
-              smooth operation. If {"it's"} not working, you might have reached
-              that limit. Just try again later or consider helping us with a
-              donation to keep the app running. More about donations is
-              explained below.
+              In order to provide a decent response to all users and prevent
+              abuses,
+              {" There's"} a limit for the number of requests. If the webapp{" "}
+              {"it's"} not working, you might have reached that limit. Just try
+              again later or consider helping us with a donation to keep the app
+              running. More about donations is explained below.
             </p>
           </li>
           <li className="mb-4">
             <strong>How do i get good answers ?</strong>
             <p>
-              For best results, provide a clear context. The model needs a
-              working situation to analyze, not just random words. Define
-              subjects and situations adequately. For example, think about the
-              email you need to send or a future conversation with your boss.
+              For best results, is suggested to provide a clear context. The
+              model needs an ordinary work situation to analyze, not just random
+              words. Define the subject and situation adequately. For example,
+              think about the email you need to send or a future conversation
+              with your boss.
             </p>
           </li>
           <li className="mb-4">
@@ -103,13 +105,15 @@ const InfoPage = () => {
           </li>
         </ul>
         <div className="">
-          <h1 className="text-2xl mb-2 font-semibold text-center">Roadmap</h1>
+          <h1 className="text-2xl mb-2 font-semibold text-center">
+            Change Log
+          </h1>
           <ul className="list-disc list-inside w-96 px-2 py-5 md:text-justify">
             <li className="my-2">1st August 2023</li>
             <p>English Language integration</p>
             <li className="my-2">1st October 2023</li>
             <p>Russian and Hungarian Language integration</p>
-            <li className="my-2">1st Dicember 2023</li>
+            <li className="my-2">1st December 2023</li>
             <p>RageScore integration</p>
           </ul>
         </div>
