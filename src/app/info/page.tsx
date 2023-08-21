@@ -57,20 +57,22 @@ const InfoPage = () => {
           <li className="mb-4">
             <strong>How optimized is the model?</strong>
             <p>
-              While the model is functional, it's still being optimized. If it
-              doesn't provide the desired output, feel free to try again! If the
-              answer is truncated is because you have reached a pre defined
+              While the model is functional, {"it's"} still being optimized. If
+              it
+              {"doesn't"} provide the desired output, feel free to try again! If
+              the answer is truncated is because you have reached a pre defined
               token limit for your answer. These limits ensure the website to
               work properly for all users.
             </p>
           </li>
           <li className="mb-4">
-            <strong>Why the conversion isn't it working?</strong>
+            <strong>Why the conversion {"isn't"} it working?</strong>
             <p>
-              There's a set limit for the number of requests to ensure smooth
-              operation. If it's not working, you might have reached that limit.
-              Just try again later or consider helping us with a donation to
-              keep the app running. More about donations is explained below.
+              {" There's"} a set limit for the number of requests to ensure
+              smooth operation. If {"it's"} not working, you might have reached
+              that limit. Just try again later or consider helping us with a
+              donation to keep the app running. More about donations is
+              explained below.
             </p>
           </li>
           <li className="mb-4">

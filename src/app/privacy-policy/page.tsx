@@ -16,8 +16,8 @@ const PrivacyPolicyPage = () => {
           </li>
           <li>
             It is your responsibility to use the content in respect of other
-            people's rights and privacy. We do not encourage any aggressive or
-            offensive act towards others.
+            {"people's"} rights and privacy. We do not encourage any aggressive
+            or offensive act towards others.
           </li>
           <li>We only monetize from donations and GoogleAdSense.</li>
           <li>
