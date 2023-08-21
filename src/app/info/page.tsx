@@ -14,7 +14,7 @@ const InfoPage = () => {
             <p>
               RageFormatter is an ironic webapp designed to convert your angry
               messages into polite ones. Suitable for your workplace and ready
-              to send to your boss or collegues. Follow the {}
+              to send to your boss or colleagues. Follow the {}
               <Link
                 href={"/tutorial"}
                 className="underline transition ease-in-out duration-150"
@@ -28,9 +28,9 @@ const InfoPage = () => {
             <strong>Do you save my messages or data?</strong>
             <p>
               Absolutely No! RageFormatter does not store any data and is
-              completeley anonymous. Your messages however might be part of
-              OpenAI collections but never connected directley to you.
-              Rageformatter is safe and built with no commercal intensions.
+              completely anonymous. Your messages however might be part of
+              OpenAI collections but never connected directly to you.
+              Rageformatter is safe and built with no commercial intensions.
             </p>
           </li>
           <li className="mb-4">
