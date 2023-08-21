@@ -1,3 +1,4 @@
+import React from "react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -33,8 +34,8 @@ export default function RootLayout({
           <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
         ) : null}
         <Header />
-        <div className="app-container">
-          <div className="main-content">{children}</div>
+        <div className="flex flex-col min-h-screen">
+          <div className="flex-1">{children}</div>
           <Footer />
         </div>
       </body>

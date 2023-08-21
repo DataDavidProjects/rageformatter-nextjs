@@ -66,7 +66,7 @@ const MessageForm: React.FC = () => {
       <div className="mb-4 text-center">
         <button
           onClick={toggleLanguage}
-          className="px-2 py-1 text-xs font-semibold text-gray-600 hover:text-gray-900"
+          className="px-2 py-1 text-xs font-semibold text-gray-600 hover:text-gray-900 border rounded-lg"
         >
           {language === "english"
             ? "Switch to Italian 🇮🇹 "
