@@ -89,9 +89,9 @@ const InfoPage = () => {
           <li className="mb-4">
             <strong>Can i use RageFormatter on mobile?</strong>
             <p>
-              Absolutely! The web is responsive and you can use it in all type
-              of devices. You might encounter small differences but the tool
-              will work in the same way.
+              Absolutely! The website is responsive and you can use it in all
+              type of devices. You might encounter small differences but the
+              tool will work in the same way.
             </p>
           </li>
           <li className="mb-4">
