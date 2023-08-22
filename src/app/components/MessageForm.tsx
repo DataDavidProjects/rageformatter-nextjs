@@ -103,6 +103,7 @@ const MessageForm: React.FC = () => {
         ) : (
           <button
             type="submit"
+            disabled={loading}
             className="px-4 py-2 mx-20 text-white bg-red-700 rounded hover:bg-red-900"
           >
             {language === "english" ? "Format" : "Formatta"}
