@@ -6,7 +6,7 @@ const InfoPage = () => {
     <div className="bg-slate-100 min-h-screen flex flex-col justify-between">
       <main className="flex-1 p-5 text-sm text-gray-600 flex flex-col items-center space-y-6">
         <h1 className="text-2xl mb-2 font-semibold pt-3">RageFormatter Q&A</h1>
-        <p>Last Update: 21th August 2023</p>
+        <p>Last Update: 23th August 2023</p>
         <ul className="list-disc list-inside w-96 px-2 py-5 md:text-justify ">
           <li className="mb-4">
             {" "}
@@ -29,7 +29,7 @@ const InfoPage = () => {
             <p>
               Absolutely No! RageFormatter does not store any data and is
               completely anonymous. Your messages however might be part of
-              OpenAI collections but never connected directly to you.
+              OpenAI or Google collections, but never connected directly to you.
               Rageformatter is safe and built with no commercial intensions.
             </p>
           </li>

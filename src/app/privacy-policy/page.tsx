@@ -22,7 +22,8 @@ const PrivacyPolicyPage = () => {
           <li>We only monetize from donations and GoogleAdSense.</li>
           <li>
             We do not gather personal data. However, third parties, such as
-            Google, may have access to personal data for profiling purposes.
+            Google or OpenAI, may have access to personal data for profiling
+            purposes or moderation policy.
           </li>
           <li>
             We reserve the right to make changes to our privacy policy at any
