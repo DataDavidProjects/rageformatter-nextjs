@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BsFillBriefcaseFill } from "react-icons/bs";
+import { StripeDonation } from "../components/StripeDonation";
 
 const TutorialPage = () => {
   return (
@@ -65,6 +66,9 @@ const TutorialPage = () => {
             ⚠️ Note: Always double-check the answer, we are trying to optimize
             the model.
           </p>
+          <div className="flex justify-center">
+            <StripeDonation />
+          </div>
         </div>
       </main>
     </div>

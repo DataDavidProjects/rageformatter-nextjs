@@ -7,7 +7,7 @@ const Header = () => {
     <header className="bg-gradient-to-t from-red-700 to-red-900 text-white py-3 mb-auto">
       <div className="container mx-auto px-5 lg:px-0 text-center text-xs">
         <Link href={"/"} className="mb-3">
-          <h1 className="text-2xl font-bold tracking-tight">
+          <h1 className="text-4xl font-bold tracking-tight">
             <span role="img" aria-label="Rage Emoji">
               🤬
             </span>{" "}
@@ -26,12 +26,6 @@ const Header = () => {
             <span className="flex items-center space-x-1">
               <BsFillBookFill size={20} />
               <span>How it works</span>
-            </span>
-          </Link>
-          <Link href={"/info"}>
-            <span className="flex items-center space-x-1">
-              <BsQuestionCircle size={20} />
-              <span>Q&A</span>
             </span>
           </Link>
         </div>
