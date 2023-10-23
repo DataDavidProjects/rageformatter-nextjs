@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { BsHouseDoor, BsQuestionCircle, BsFillBookFill } from "react-icons/bs";
+import { BsHouseDoor, BsFillBookFill } from "react-icons/bs";
 
 const Header = () => {
   return (
