@@ -137,8 +137,6 @@ export default function Home() {
                 <p>English Language integration</p>
                 <li className="my-2">17th September 2023</li>
                 <p>Stripe integration</p>
-                <li className="my-2">1st October 2023</li>
-                <p>Russian and Hungarian Language integration</p>
 
                 <li className="my-2">1st December 2023</li>
                 <p>RageScore integration</p>
