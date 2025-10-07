@@ -6,8 +6,7 @@ export async function POST(request: NextRequest) {
     const { messages } = await request.json();
     const userMessage = messages?.user || "";
     const language = messages?.language || "english";
-
-    const openai = new OpenAI();
+    const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY! });
 
     const systemContent = `
           Sei un servizio sofware  chiamato  RageFormatter.
@@ -65,9 +64,8 @@ export async function POST(request: NextRequest) {
           Resta dentro un utilizzo token di 150.
           Se il messaggio è vuoto, rispondi con uno smile e se il soggetto non è specificato, immagina sia un messaggio al capo dello user`;
 
-    // 👇 UPDATED: Use openai.chat.completions.create()
     const completion = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4",
       messages: [
         {
           role: "system",
@@ -85,7 +83,6 @@ export async function POST(request: NextRequest) {
       max_tokens: 150,
     });
 
-    // 👇 UPDATED: Access the message from completion.choices[0].message
     return NextResponse.json({ message: completion.choices[0].message });
   } catch (err) {
     console.error("OpenAI API Error:", err);
