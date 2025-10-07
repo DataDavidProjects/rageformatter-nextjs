@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Configuration, OpenAIApi } from "openai";
+import OpenAI from "openai";
 
 export async function POST(request: NextRequest) {
   try {
@@ -7,19 +7,9 @@ export async function POST(request: NextRequest) {
     const userMessage = messages?.user || "";
     const language = messages?.language || "english";
 
-    const configuration = new Configuration({
-      // organization: 'org-*',
-      apiKey: process.env.OPENAI_API_KEY,
-    });
+    const openai = new OpenAI();
 
-    const openai = new OpenAIApi(configuration);
-
-    const completion = await openai.createChatCompletion({
-      model: "gpt-3.5-turbo",
-      messages: [
-        {
-          role: "system",
-          content: `
+    const systemContent = `
           Sei un servizio sofware  chiamato  RageFormatter.
           Devi convertire i messaggi offensivi o inappropriati in comunicazioni professionali ed educative.
           Stai aiutando  delle  persone, non  giudicarle o si sentiranno male per colpa tua.
@@ -73,7 +63,15 @@ export async function POST(request: NextRequest) {
           Üdvözlettel.
           
           Resta dentro un utilizzo token di 150.
-          Se il messaggio è vuoto, rispondi con uno smile e se il soggetto non è specificato, immagina sia un messaggio al capo dello user`,
+          Se il messaggio è vuoto, rispondi con uno smile e se il soggetto non è specificato, immagina sia un messaggio al capo dello user`;
+
+    // 👇 UPDATED: Use openai.chat.completions.create()
+    const completion = await openai.chat.completions.create({
+      model: "gpt-3.5-turbo",
+      messages: [
+        {
+          role: "system",
+          content: systemContent,
         },
         {
           role: "user",
@@ -87,9 +85,13 @@ export async function POST(request: NextRequest) {
       max_tokens: 150,
     });
 
-    return NextResponse.json({ message: completion.data.choices[0].message });
+    // 👇 UPDATED: Access the message from completion.choices[0].message
+    return NextResponse.json({ message: completion.choices[0].message });
   } catch (err) {
-    console.error(err);
-    return NextResponse.json({ error: "Error processing request" });
+    console.error("OpenAI API Error:", err);
+    return NextResponse.json(
+      { error: "Error processing request" },
+      { status: 500 }
+    );
   }
 }
