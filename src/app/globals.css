@@ -1,9 +1,34 @@
-/* Optmized Global CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
+}
+
+html {
+  overflow-x: clip; /* the 3D canvas is wider than its slot; never cause sideways scroll */
+}
+
+body {
+  background-color: #e6e8ec;
+  color: #1c1f26;
+  /* faint paper grain, page background only */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .11  0 0 0 0 .12  0 0 0 0 .15  0 0 0 .05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+:focus-visible {
+  outline: 2px solid #a4262c;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
