@@ -4,7 +4,7 @@ import OpenAI from "openai";
 export async function POST(request: NextRequest) {
   try {
     const { messages } = await request.json();
-    const userMessage = messages?.user || "";
+    const userMessage = String(messages?.user || "").slice(0, 1000);
     const language = messages?.language || "english";
     const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY! });
 
@@ -68,7 +68,7 @@ export async function POST(request: NextRequest) {
           Se il messaggio è vuoto, rispondi con uno smile e se il soggetto non è specificato, immagina sia un messaggio al capo dello user`;
 
     const completion = await openai.chat.completions.create({
-      model: "gpt-4",
+      model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
       messages: [
         {
           role: "system",

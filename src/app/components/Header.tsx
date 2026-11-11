@@ -1,34 +1,23 @@
 import React from "react";
 import Link from "next/link";
-import { BsHouseDoor, BsFillBookFill } from "react-icons/bs";
+import NavLinks from "./NavLinks";
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-t from-red-700 to-red-900 text-white py-3 mb-auto">
-      <div className="container mx-auto px-5 lg:px-0 text-center text-xs">
-        <Link href={"/"} className="mb-3">
-          <h1 className="text-4xl font-bold tracking-tight">
-            <span role="img" aria-label="Rage Emoji">
-              🤬
-            </span>{" "}
-            RageFormatter
-          </h1>
-          <p>Because they do not pay you enough to be also polite!</p>
+    <header className="bg-ballpoint text-white">
+      <div className="mx-auto flex max-w-[1120px] flex-wrap items-end justify-between gap-x-6 gap-y-3 px-5 pb-4 pt-[max(1rem,env(safe-area-inset-top))]">
+        <Link href="/" className="block" aria-label="RageFormatter, home">
+          <span className="block font-display text-2xl font-bold tracking-tight">
+            <span className="text-white/70 line-through decoration-white decoration-[3px]">
+              Rage
+            </span>
+            Formatter
+          </span>
+          <span className="block text-xs text-white/80">
+            Because they do not pay you enough to be also polite!
+          </span>
         </Link>
-        <div className="flex justify-between gap-10 sm:mx-20 lg:mx-60 my-4 font-sans text-sm font-bold">
-          <Link href={"/"}>
-            <span className="flex items-center space-x-1">
-              <BsHouseDoor size={20} />
-              <span>Home</span>
-            </span>
-          </Link>
-          <Link href={"/tutorial"}>
-            <span className="flex items-center space-x-1">
-              <BsFillBookFill size={20} />
-              <span>How it works</span>
-            </span>
-          </Link>
-        </div>
+        <NavLinks />
       </div>
     </header>
   );
